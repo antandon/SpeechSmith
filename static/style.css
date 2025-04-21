@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f5ff;
+    font-size: 1.1rem;
+}
+
+
+/* Navigation Styles */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: none;
+    color: #6C63FF;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    color: #FF6B9B;
+}
+
+
+/* Section Styles */
+
+section {
+    min-height: 100vh;
+    padding: 6rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Home Section */
+
+#home {
+    background: url('background_image.jpg') center/cover no-repeat;
+    /* Replace 'your-image.jpg' with the path to your background image */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* Ensures text is visible if the image is dark */
+    padding: 2rem;
+    position: relative;
+}
+
+.hero {
+    background: rgba(130, 120, 120, 0.5);
+    /* Optional overlay for better text contrast */
+    padding: 4rem;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(147, 138, 138, 0.2);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(45deg, #6C63FF, #FF6B9B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    background: #6C63FF;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* About Section */
+
+#about {
+    background: #fff;
+}
+
+.about-container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 2.75rem;
+    background: linear-gradient(45deg, #6C63FF, #FF6B9B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1.5rem;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Why Choose Us Section */
+
+#why-choose-us {
+    background: #f8f5ff;
+}
+
+.why-choose-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Services Section */
+
+#services {
+    background: #fff;
+}
+
+.services-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: #f0f0ff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: #6C63FF;
+}
+
+
+/* Contact Section */
+
+
+/* 
+#contact {
+    background: #f8f5ff;
+}
+
+.contact-container {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #6C63FF;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #6C63FF, #FF6B9B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+} */
+
+
+/* Utility Classes */
+
+.section-title {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    border: none;
+    font-size: 1.2rem;
+    background: #6C63FF;
+    color: white;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #5650cc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8ff;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.service2-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #6b46c1, #d53f8c);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.step-container {
+    background-color: #e9e5ff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.step-icon {
+    background-color: #d8d4ff;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-content h3 {
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.checkbox-group {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #6b46c1, #9f7aea);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* Last Page */
+
+.last-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+    padding: 2rem;
+    font-size: 2.5rem;
+}
+
+.last-container {
+    display: flex;
+    justify-content: center;
+    /* Center the image in the nav section */
+    margin-top: 2rem;
+}
+
+.last-image {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Back Arrows Styling within the Navigation Page */
+
+.last-page .back-arrows {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    /* Spacing above the arrows */
+}
+
+.last-page .arrow {
+    color: #6b46c1;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.last-page .arrow:hover {
+    color: #4c2a9c;
+    /* Darker shade on hover */
+}
+
+#contact {
+    min-height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.contact-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    position: relative;
+    /* Set relative positioning */
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+}
+
+.form-section {
+    margin-bottom: 2rem;
+    /* Add margin to create space below the form */
+}
+
+h2 {
+    font-size: 2.5rem;
+    /* Adjusted for your contact heading */
+    color: rgb(109, 40, 217);
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    color: rgb(109, 40, 217);
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+    width: 70%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background: rgba(199, 180, 252, 0.3);
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background: rgb(109, 40, 217);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: rgb(91, 33, 182);
+}
+
+.contact-info {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.info-item {
+    display: flex;
+    /* Align icon and text in a row */
+    align-items: center;
+    /* Center items vertically */
+    gap: 0.5rem;
+    /* Space between icon and text */
+    color: rgb(109, 40, 217);
+    /* Text color */
+}
+
+.info-item i {
+    font-size: 1.2rem;
+    /* Icon size */
+}
+
+.success-message {
+    display: none;
+    /* Initially hidden, will show after form submission */
+    background: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.contact-image {
+    width: 300px;
+    /* Set width of the image */
+    height: 500px;
+    /* Maintain aspect ratio */
+    position: absolute;
+    /* Set absolute positioning */
+    right: 2rem;
+    /* Position it to the right */
+    top: 7rem;
+    /* Adjust the top margin as needed */
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        /* Stack elements vertically */
+    }
+    .form-section {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+    h2 {
+        font-size: 2rem;
+        /* Adjusted for smaller screens */
+    }
+}

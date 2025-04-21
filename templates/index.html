@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeechSmith</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#6C63FF" d="M4 10h2v4H4v-4zm3-2h2v8H7V8zm3-2h2v12h-2V6zm3 2h2v8h-2V8zm3-2h2v12h-2V6z"/>
+            </svg>
+            <span style="color: #6C63FF; font-weight: 600;">speechsmith</span>
+        </div>
+        <div class="nav-links">
+            <button class="nav-button" onclick="scrollToSection('home')">Home</button>
+            <button class="nav-button" onclick="scrollToSection('about')">About</button>
+            <button class="nav-button" onclick="scrollToSection('why-choose-us')">Why Choose Us</button>
+            <button class="nav-button" onclick="scrollToSection('services')">Services</button>
+            <button class="nav-button" onclick="scrollToSection('contact')">Contact</button>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="hero">
+            <h1>SPEECHSMITH</h1>
+            <p>Elevate your speech. Amplify your impact!</p>
+            <button class="btn" onclick="scrollToSection('about')">Read More</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About speechsmith</h2>
+                <p>At SpeechSmith, we are dedicated to helping you craft and deliver speeches that resonate. Our innovative platform combines cutting-edge speech analysis with personalized coaching to refine every aspect of your delivery. Whether you're
+                    preparing for a keynote, a presentation, or simply looking to boost your communication skills, SpeechSmith is your go-to tool for mastering the art of oration. We believe that every voice has the power to inspire, and we're here to
+                    help you unlock yours.</p>
+            </div>
+            <div class="about-image">
+                <img src="../static/sample.jpg" alt="About SpeechSmith">
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <div class="why-choose-container">
+            <h2 class="section-title gradient-text">Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>REAL-TIME FEEDBACK</h3>
+                    <p>Receive instant analysis on your speech delivery, covering tone, pacing, and clarity, so you can make immediate improvements.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>PERSONALIZED COACHING</h3>
+                    <p>Our AI-driven platform provides customized tips and exercises based on your unique speaking style, ensuring you progress at your own pace.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>COMPREHENSIVE ANALYTICS</h3>
+                    <p>Track your progress with detailed reports that highlight strengths and areas for growth, helping you consistently refine your skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services-container">
+            <h2 class="section-title gradient-text">Our Services</h2>
+            <p class="section-subtitle">At speechsmith, we offer a seamless and effective way to refine your speech delivery, ensuring it meets your specific goals and resonates with your audience.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-microphone service-icon"></i>
+                    <h3>AUDIO UPLOAD</h3>
+                    <p>Easily upload your speech recordings to our platform for comprehensive analysis.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tasks service-icon"></i>
+                    <h3>CUSTOMIZED SPEECH GOALS</h3>
+                    <p>Tailor your speech refinement by selecting your target audience and the intent of your speech using our intuitive checkboxes.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-comments service-icon"></i>
+                    <h3>DETAILED FEEDBACK</h3>
+                    <p>Receive in-depth feedback on your speech, including insights on tone, pacing, and clarity, along with specific suggestions for improvement.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-edit service-icon"></i>
+                    <h3>REFORMED SPEECH</h3>
+                    <p>Get a refined version of your speech that aligns perfectly with your chosen audience and intent, making it more impactful and effective.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id=services2>
+        <!-- First Page -->
+        <div class="services2-container" id="formPage">
+            <h1 class="title">Our Services</h1>
+
+            <div class="step-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                    </svg>
+                    </div>
+                    <div class="step-content">
+                        <h3>STEP 1</h3>
+                        <p>Upload your audio/video with your speech.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                    </svg>
+                    </div>
+                    <div class="step-content">
+                        <h3>STEP 2</h3>
+                        <p>Select a maximum of 2 boxes for the questions below</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="school" name="service">
+                    <label for="school">School students</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="office" name="service">
+                    <label for="office">Office/adult conference</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="cultural" name="service">
+                    <label for="cultural">Cultural gathering</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="other" name="service">
+                    <label for="other">Other... (text box to type)</label>
+                </div>
+            </div>
+
+            <button class="submit-btn" onclick="showNavPage()">
+            SUBMIT
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+        </button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2 class="gradient-text">CONTACT US</h2>
+            <div class="contact-wrapper">
+                <div class="form-section">
+                    <div class="success-message" id="successMessage">Form submitted successfully!</div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email ID</label>
+                            <input type="email" placeholder="Your email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Comments</label>
+                            <textarea rows="4" placeholder="Your message" name="comments" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact info section below the form -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Speechsmith@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>India</p>
+                    </div>
+                </div>
+
+            </div>
+            <img src="../static/person.png" alt="Person" class="contact-image">
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section id="last-page">
+        <div class="last-page">
+            <div class="back-arrows">
+                <span class="arrow">←</span>
+                <span class="arrow">←</span>
+                <span class="arrow">←</span>
+            </div>
+            <div class="last-container">
+                <img src="../static/sample.jpg" alt="Speaker" class="nav-image">
+            </div>
+        </div>
+    </section>
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
